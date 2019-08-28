@@ -619,7 +619,7 @@ function Image3d(bg, flare){
     element.style.width = `${bg.width}px`;
     element.style.height = `${bg.height}px`;
     element.style.backgroundImage = `url('${flare.src}'), url('${bg.src}')`;
-    element.style.backgroundSize = '50% 200%, contain';
+    element.style.backgroundSize = '120% 100%, contain';
     element.style.backgroundPosition = '50% 50%, center';
     element.style.backgroundRepeat = 'no-repeat, no-repeat';
 
@@ -654,7 +654,7 @@ Image3d.prototype.rotate = function(ax = 0, ay = 0, az = 0){
 
     element.style.boxShadow = `${-ay}px ${-ax}px ${(Math.abs(ay) + Math.abs(ax)) * 2}px 0px rgba(0, 0, 0, .7)`;
 
-    element.style.backgroundPosition = `${50 - ay * 15}% ${50}%, center`;
+    element.style.backgroundPosition = `${50 - ay * 5}% ${50}%, center`;
 
     return this;
 }
@@ -714,7 +714,7 @@ Image3d.prototype.setHeight = function(height){
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/6217c2a9e887e6c6fb8bdec8038ea6fc.png";
+module.exports = __webpack_require__.p + "img/94201a33e8eabdc9e96fd811b54d8bde.png";
 
 /***/ }),
 
